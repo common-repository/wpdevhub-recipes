@@ -1,0 +1,83 @@
+/* Dimbal Troubleshooting Guides */
+
+.drc_subheading{
+    border-bottom: 1px solid #d3d3d3;
+    font-size: larger;
+}
+.drc_recipe_metabox{
+    font-size: small;
+    display: inline-block;
+    float:right;
+    margin: 0px 0px 0px 40px;
+}
+.drc_recipe_metabox > span{
+    font-weight:bold;
+}
+.drc_generic_list{
+    list-style-type: square;
+    list-style-position: inside;
+}
+.drc_generic_item{
+    margin: 5px;
+}
+.drc_instruction_list{
+    counter-reset: item;
+    list-style:none;
+}
+.drc_instruction_item{
+    list-style-type:none;
+    margin: 15px 0px 15px 0px;
+}
+.drc_instruction_item_contents{
+    display: inline-block;
+    padding: 0 0 0 50px;
+    vertical-align: top;
+}
+.drc_instruction_item:before{
+    content: counter(item);
+    text-align: center;
+    position: absolute;
+    margin: 0;
+    counter-increment: item;
+    border: 1px solid #cfcfcf;
+    color: #cfcfcf;
+    font-size: 16px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.drc_media_single{
+    width:auto;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+    margin: 3px;
+    border-radius: 10px;
+    height:500px;
+    max-height:500px;
+}
+.drc_media_thumb_outer_wrapper{
+    width:100%;
+    padding:0;
+    text-align: center;
+}
+.drc_media_thumb{
+    width:100px;
+    margin:3px;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+}
+.drc_media_thumb:hover{
+    cursor:pointer;
+}
+.drc_media_circle_border{
+    solid 1px #cfcfcf;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+}
